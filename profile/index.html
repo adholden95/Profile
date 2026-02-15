@@ -23,6 +23,13 @@
           </div>
           <div class="divider w-full"></div>
           <p class="text-white text-xl text-center">alex holden</p>
+          <span class="text-rotate text-xl leading-[2]">
+            <span class="justify-items-center text-white">
+              <span><i class="bi bi-github"></i> adholden95</span>
+              <span><i class="bi bi-envelope"></i> adholden@live.co.uk</span>
+              <span><i class="bi bi-telephone"></i> 07777777777</span>
+            </span>
+          </span>
           <div class="flex gap-6 mt-4">
             <a href="https://github.com/adholden95">
               <i class="bi bi-github text-white text-4xl hover:text-sky-950 transition"></i>
@@ -73,7 +80,7 @@
               <img src="HTMLicon.png" alt="HTML Icon" />
             </figure>
             <div class="card-body items-center">
-              <h2 class="card-title text-center">HTML</h2>
+              <h2 class="card-title text-center text-xs md:text-base">HTML</h2>
             </div>
           </div>
           <div class="card bg-base shadow-sm rounded-full">
@@ -81,7 +88,7 @@
               <img src="CSSicon.png" alt="CSS Icon" />
             </figure>
             <div class="card-body items-center">
-              <h2 class="card-title text-center">CSS</h2>
+              <h2 class="card-title text-center text-xs md:text-base">CSS</h2>
             </div>
           </div>
           <div class="card bg-base shadow-sm rounded-full">
@@ -89,7 +96,7 @@
               <img src="JSicon.png" alt="JavaScript Icon" />
             </figure>
             <div class="card-body items-center">
-              <h2 class="card-title text-center">JavaScript</h2>
+              <h2 class="card-title text-center text-xs md:text-base">JavaScript</h2>
             </div>
           </div>
           <div class="card bg-base shadow-sm rounded-full">
@@ -97,7 +104,7 @@
               <img src="Bootstrapicon.png" alt="Bootstrap Icon" />
             </figure>
             <div class="card-body items-center">
-              <h2 class="card-title text-center">Bootstrap</h2>
+              <h2 class="card-title text-center text-xs md:text-base">Bootstrap</h2>
             </div>
           </div>
           <div class="card bg-base shadow-sm rounded-full">
@@ -105,7 +112,7 @@
               <img src="Tailwindicon.svg" alt="Tailwind Icon" />
             </figure>
             <div class="card-body items-center">
-              <h2 class="card-title text-center">Tailwind</h2>
+              <h2 class="card-title text-center text-xs md:text-base">Tailwind</h2>
             </div>
           </div>
           <div class="card bg-base shadow-sm rounded-full">
@@ -113,11 +120,54 @@
               <img src="Giticon.png" alt="Git Icon" />
             </figure>
             <div class="card-body items-center">
-              <h2 class="card-title text-center">Git</h2>
+              <h2 class="card-title text-center text-xs md:text-base">Git</h2>
             </div>
           </div>
         </div>
         <div class="divider divider-info"></div>
+        <!--Projects-->
+        <h2 class="text-2xl font-semibold">My Projects</h2>
+        <div class="divider divider-info"></div>
+          <div class="flex flex-col gap-6 items-center">
+            <div class="card bg-base-100 w-full max-w-wd shadow-lg aspect-video overflow-hidden projectCard relative" id="Magpie">
+              <figure class="h-full w-full">
+                <img src="MagpieScreenshot.png" alt="Magpie Screenshot" class="w-full h-full object-cover"/>
+              </figure>
+              <div class="card-body items-center hidden cardID z-10 text-center p-4 md:p-8">
+                <h2 class="card-title text-white text-base md:text-2xl">Magpie Heating</h2>
+                <p class="text-white text-xs md:text-sm leading-relaxed">My First Website. This was the first site I volunteered to create for a small, local company using Bootstrap and JavaScript. This was also the first time buying a domain and uploading the site manually rather then through a third party such as Netlify.</p>
+                <div class="card-actions mt-auto justify-end">
+                  <a href="https://magpieheating.co.uk" targe="_blank">
+                  <button class="btn btn-info text-white">Visit Site</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 w-full max-w-wd shadow-lg aspect-video overflow-hidden projectCard relative">
+              <figure class="h-full w-full">
+                <img src="AstroScreenshot.png" alt="AstroAlex Screenshot" class="w-full h-full object-cover" />
+              </figure>
+              <div class="card-body items-center hidden cardID z-10 text-center p-4 md:p-8">
+                <h2 class="card-title text-white text-base md:text-2xl">Astro Alex - Solar System</h2>
+                <p class="text-white text-xs md:text-sm leading-relaxed">This was my first attempt at using Astro for a site. This was created as part of a course provided by The Coders Guild for Web Developers and is incomplete as I continue to expirment with Astro.</p>
+                <div class="card-actions mt-auto justify-end">
+                  <a href="https://astroalex.netlify.app/" targe="_blank">
+                  <button class="btn btn-info text-white">Visit Site</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--FAB Buttons-->
+        <div class="fab">
+          <div tabindex="0" role="button" class="btn btn-lg btn-circle btn-info text-xl">+</div>
+          <a href="#"><button class="btn btn-lg btn-circle"><i class="bi bi-house text-xl text-blue-500"></i></button></a>
+          <a href="/profile/contact.html"><button class="btn btn-lg btn-circle"><i class="bi bi-envelope text-xl text-blue-500"></i></button></a>
+          <a href="https://github.com/adholden95"><button class="btn btn-lg btn-circle"><i class="bi bi-github text-xl text-blue-500"></i></button></a>
+          <a href="https://www.linkedin.com/in/alex-holden-400280279"><button class="btn btn-lg btn-circle"><i class="bi bi-linkedin text-xl text-blue-500"></i></button></a>
+        </div>
       </section>
     <script type="module" src="/src/main.js"></script>
   </body>
