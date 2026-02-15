@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Alex Holden - Welcome To My Profile!</title>
   </head>
-  <body class="bg-neutral-300 min-h-screen font1 overflow-x-hidden">
+  <body class="bg-neutral-200 min-h-screen font1 overflow-x-hidden">
     <section class="min-h-screen w-full flex flex-col md:flex-row gap-8 px-4 py-10">
       <!--Left hand card-->
-      <div class="w-full max-w-md md:w-1/3">
+      <div class="w-full max-w-md md:w-1/3 mx-auto">
         <div class="md:sticky md:top-10 bg-blue-500 rounded-xl shadow-lg flex flex-col items-center p-8">
           <div class="avatar avatar-placeholder">
             <div class="bg-neutral text-neutral-content w-24 rounded-full">
@@ -39,9 +39,9 @@
         </div>
       </div>
       <!--Right Hand Card-->
-      <div class="w-full max-w-2xl md:w-2/3 bg-white rounded-xl shadow-lg p-8">
+      <div class="w-full max-w-2xl md:w-2/3 bg-white rounded-xl shadow-lg p-8 mx-auto">
         <h2 class="text-2xl font-semibold">About Me</h2>
-        <div class="divider"></div>
+        <div class="divider divider-info"></div>
         <p class="mt-2">
           Hi, I'm Alex and I'm an aspiring developer. Welcome to my profile page!
         </p>
@@ -63,11 +63,11 @@
             <span>adholden@live.co.uk</span>
           </li>
         </ul>
-        <div class="divider"></div>
+        <div class="divider divider-info"></div>
         <h2 class="text-2xl font-semibold">My Skills</h2>
-        <div class="divider"></div>
+        <div class="divider divider-info"></div>
         <!--Skills-->
-        <div class="grid grid-cols-2 gap-6 px-6 md:grid-cols-3">
+        <div class="grid grid-cols-2 gap-6 px-6 md:grid-cols-3 py-2">
           <div class="card bg-base shadow-sm rounded-full">
             <figure class="max-w-1/2 mx-auto pt-10">
               <img src="HTMLicon.png" alt="HTML Icon" />
@@ -92,7 +92,32 @@
               <h2 class="card-title text-center">JavaScript</h2>
             </div>
           </div>
+          <div class="card bg-base shadow-sm rounded-full">
+            <figure class="max-w-1/2 mx-auto pt-10">
+              <img src="Bootstrapicon.png" alt="Bootstrap Icon" />
+            </figure>
+            <div class="card-body items-center">
+              <h2 class="card-title text-center">Bootstrap</h2>
+            </div>
+          </div>
+          <div class="card bg-base shadow-sm rounded-full">
+            <figure class="max-w-1/2 mx-auto pt-10">
+              <img src="Tailwindicon.svg" alt="Tailwind Icon" />
+            </figure>
+            <div class="card-body items-center">
+              <h2 class="card-title text-center">Tailwind</h2>
+            </div>
+          </div>
+          <div class="card bg-base shadow-sm rounded-full">
+            <figure class="max-w-1/2 mx-auto pt-10">
+              <img src="Giticon.png" alt="Git Icon" />
+            </figure>
+            <div class="card-body items-center">
+              <h2 class="card-title text-center">Git</h2>
+            </div>
+          </div>
         </div>
+        <div class="divider divider-info"></div>
       </section>
     <script type="module" src="/src/main.js"></script>
   </body>
