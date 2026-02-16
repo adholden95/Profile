@@ -51,19 +51,18 @@
             <div class="chat-bubble chat-bubble-info text-2xl">Get In Touch!</div>
         </div>
         <div class="divider divider-info"></div>
-        <form method="POST" action="" name="contact" id="conForm" >
-            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
-                <div class="sm:col-span-3 mb-6">
+        <form method="POST" action="https://formspree.io/f/mdalzejb" name="contact" id="conForm" >
+            <div class="mt-5 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
+                <div class="sm:col-span-3 mb-5 md:mb-0">
                     <label for="name" class="block text-sm/6 font-medium text-gray-900">Name</label>
                     <div class="mt-2">
                         <input id="name" type="text" name="name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" required placeholder="Name" />
                     </div>
                 </div>
-                <br>
                 <div class="sm:col-span-3">
-                    <label for="conNumber" class="block text-sm/6 font-medium text-gray-900">Contact Number</label>
+                    <label for="number" class="block text-sm/6 font-medium text-gray-900">Contact Number</label>
                     <div class="mt-2">
-                        <input id="conNumber" type="tel" name="conNumber" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 input validator tabular-nums" required placeholder="Phone Number" pattern="[0-9]*" minlength="11" maxlength="11" title="Please enter a valid phone number"/>
+                        <input id="number" type="tel" name="number" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 input validator tabular-nums" required placeholder="Phone Number" pattern="[0-9]*" minlength="11" maxlength="11" title="Please enter a valid phone number"/>
                         <p class="validator-hint">Please enter a valid UK phone number</p>
                     </div>
                 </div>
@@ -75,14 +74,14 @@
                     </div>
                 </div>
                 <div class="col-span-full">
-                    <label for="about" class="block text-sm/6 font-medium text-gray-900">Your Message</label>
+                    <label for="message" class="block text-sm/6 font-medium text-gray-900">Your Message</label>
                     <div class="mt-2">
-                        <textarea id="about" name="about" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
+                        <textarea id="message" name="message" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" placeholder="Type Your Message Here, Max 500 Char" maxlength="500"></textarea>
                     </div>
                 </div>
             </div>
             <div class="mt-6 flex items-center justify-end gap-x-6">
-                <button type="button" class="rounded-md bg-neutral-800 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Cancel</button>
+                <button type="button" class="rounded-md bg-neutral-800 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" id="clear">Clear</button>
                 <button type="submit" class="rounded-md bg-blue-500 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send</button>
             </div>
         </form>
@@ -97,5 +96,6 @@
           <a href="https://github.com/adholden95"><button class="btn btn-lg btn-circle"><i class="bi bi-github text-xl text-blue-500"></i></button></a>
           <a href="https://www.linkedin.com/in/alex-holden-400280279"><button class="btn btn-lg btn-circle"><i class="bi bi-linkedin text-xl text-blue-500"></i></button></a>
         </div>
+        <script type="module" src="/src/main.js"></script>
   </body>
 </html>

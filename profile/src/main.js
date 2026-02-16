@@ -21,3 +21,18 @@ cards.forEach(card => {
     }
   });
 });
+
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+    return;
+  }
+}
+
+const clearBtn = document.getElementById("clear"); 
+const form = document.getElementsByTagName("form")[0];
+
+clearBtn.addEventListener("click", function (){
+  form.reset();
+  return;
+})
