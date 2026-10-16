@@ -9,3 +9,8 @@
 @theme {
   --text-tiny: 0.6rem;
 }
+
+:root {
+  color-scheme: light;
+  supported-color-schemes: light;
+}
